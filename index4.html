@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+
+<body>
+    <header style = "
+            position: relative;
+            width: 100%;
+            min-height: 66px;
+            background: #3E00FF;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			z-index: 10;">
+        <a href="#" class="logo">NIBD</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+	
+	<div class="Section_top">
+    <div class="bg-image image1"> </div>
+	
+	
+    
+    
+</div>
+	
+	
+	
+        <section id="about-us">
+		<style>
+				body {
+				font-family: 'Arial', sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+				color: #333;
+				text-align: center !important;
+				}
+
+				header {
+				text-align: center !important;
+				background-color: #007BFF !important;
+				color: white !important;
+				padding: 20px !important;
+				text-align: center !important;
+				}
+
+				header h1 {
+				margin: 0 !important;
+				font-size: 2.5em !important;
+				}
+
+				header p {
+				font-size: 1.2em !important;
+				color:#fff
+				}
+				</style>
+				
+		<header style = "text-align: center !important ;">
+	
+			<h1 >About Us</h1>
+        <p >Learn more about our mission and team.</p>
+		
+</header>
+<div class="blank-section">
+        <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>We strive to provide the best services to our customers, ensuring quality and satisfaction in everything we do.</p>
+    </section>
+
+    <section class="team-section">
+        <h2>What We Bring</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="gear.jpg" alt="filler">
+                <h3>Expertise and Experience</h3>
+                <p>With the necessary skills and years of experience, we are familier with best practices and regulations to ensure you are satisfied with your results.</p>
+            </div>
+            <div class="team-member">
+                <img src="handshake.jpg" alt="filler 2">
+                <h3>Reliability</h3>
+                <p>Transparency is key. We adhere to schedules and keep clients informed throughout the project. </p>
+            </div>
+            <div class="team-member">
+                <img src="hammer.jpg" alt="filler 3">
+                <h3>Range in Services</h3>
+                <p>From customization to renovation and remodeling, we provide what's best for you. We will make your next dream project a reality!</p>
+            </div>
+
+        </div>
+    </section>
+	<section class="about-section">
+		<h2> Please enjoy viewing our gallery of projects completed for our happy customers!<h2>
+		<a href="Gallery.html" class="stylish-button">Gallery</a>
+		</section>
+		
+		
+		
+	
+	</header>
+	<div class="blank-section2">
+	<title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            max-width: 800px; /* Increased width for logo and text */
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            flex: 2; /* Allow contact info to take up more space */
+            padding-right: 20px; /* Space between text and logo */
+        }
+
+       
+
+       
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .phone-contact {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #28a745; /* Green color for emphasis */
+        }
+
+        .additional-info {
+            margin-top: 20px;
+            color: #777; /* Lighter color for less emphasis */
+        }
+    </style>
+	</div>
+</head>
+	<section id ="contact-us">
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <h2>Our Best Contact Times</h2>
+            <p>Monday to Friday: 8:00 AM - 8:00 PM</p>
+            <p>Saturday: 10:00 AM - 2:00 PM</p>
+            
+
+            <h2>Phone Contact</h2>
+            <p class="phone-contact">Call us at: <a href="tel:+18039686973">+1 (803) 968-6973</a></p>
+
+            <div class="additional-info">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, feel free to call us during our operating hours. We’re here to help!</p>
+            </div>
+        </div>
+       
+    </div>
+		
+</div>
+	</main>
+
+	<div class="footer-content">
+			<p style = "color:#fff">&copy; 2025 Nailed it Building & Design. All rights reserved.</p>
+			</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('header');
+
+            if (menuToggle) {
+                menuToggle.onclick = function () {
+                    header.classList.toggle('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

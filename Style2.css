@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+ 
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            text-align: center; /* Center-align text and content */
+        }
+        .slideshow {
+    position: relative;
+    max-width: 800px; /* Set a max width for the slideshow */
+    margin: auto; /* Center the slideshow */
+    overflow: hidden; /* Hide overflow to maintain size consistency */
+    height: 400px; /* Set a fixed height for the slideshow */
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    height: 100%; /* Ensure slides fill the slideshow container */
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%; /* Ensure images fill the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+    border-radius: 8px;
+}
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Fixed height for gallery images */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+        .modal img {
+            max-width: 90%; /* Responsive width */
+            max-height: 90%; /* Responsive height */
+            border-radius: 8px;
+        }
+
+
+.about-section, .team-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.about-section h2, .team-section h2 {
+    color: #007BFF;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 15px;
+    flex: 1 1 200px; /* Responsive width */
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+	
+
+        header .logo {
+            color: #fff;
+            font-size: 1.75em;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        header ul {
+            position: relative;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+            float: left;
+        }
+
+        header ul li a {
+            color: #fff;
+            font-size: 1.1em;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            background: #3E00FF;
+        }
+
+
+.Section_top {
+    width: 100%;
+    height: 90vh; /* Full viewport height */
+    overflow: visible;
+    position: 50% 50%;
+    background-image: url("Nailed it Home page cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:80% 70%; /* Use cover for better scaling */
+	background-color:#3b3a47;
+    text-align: center;
+}
+
+    
+
+.blank-section ul{
+	padding-bottom: 20px;
+
+}
+.blank-section ul li{
+	text-align: left;
+
+}
+
+
+
+
+
+
+.blank-section { /*this is the about us section*/
+    width: 100%;
+    min-height: auto; /* Adjust if needed */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.blank-section2 { /*this is the contact us section*/
+	width: 100%;
+    min-height: auto; /* Adjust if needed */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+.stylish-button {
+    display: inline-block; /* Allows padding and background */
+    padding: 15px 30px; /* Padding for button size */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #007BFF; /* Button color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.stylish-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.stylish-button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+
+
+
+/* General Styles */
+.text-content p {
+    text-align: left;
+}
+
+/* Image Container Styles */
+.image-container {
+    margin: 0 20px; /* Add side margins for desktop */
+}
+
+.image-container img {
+    width: auto; /* Allow image to maintain its size */
+    max-width: calc(80% - 40px); /* Account for margins */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .column-one {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Add vertical margin */
+    }
+
+    .column {
+        max-width: 100%; /* Stack columns on mobile */
+        flex: 100%; /* Ensure full width */
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #445964;
+        display: none; /* Hide by default */
+    }
+
+    header.active nav {
+        display: block; /* Show when active */
+    }
+
+    header ul li a {
+        padding: 0.5em 0.75em; /* Reduce padding for small screens */
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+
+    .Section_top {
+        height: auto; /* Allow height to adjust */
+        padding-top: 50.25%; /* Maintain aspect ratio (16:9) */
+        background-size: contain; /* Ensure the image fits */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .column-one {
+        flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header ul li {
+        padding: 0.5em 1em; /* Smaller padding for mobile */
+        font-size: 1em; /* Adjust font size for smaller screens */
+        width: 100%; /* Full width for mobile */
+    }
+}
+
+@media (max-width: 700px) {
+    header ul li a {
+        font-size: 0.11em; /* Adjust font size further */
+    }
+}
+
+@media (max-width: 800px) {
+    header ul li a {
+        font-size: 1em; /* Adjust font size further */
+    }
+}
+
+/* Footer Styles */
+.footer-content {
+    width: 100%;
+    background-color: #333; /* Adjust as needed */
+    color: #fff; /* Text color */
+    padding: 20px; /* Space in the footer */
+    position: relative;
+    margin-top: 20px; /* Add margin if needed */
+    text-align: center;
+}
+
+/* Menu Toggle Styles */
+.menuToggle {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .menuToggle {
+        display: none; /* Hide the menu toggle on desktop */
+    }
+}
+
+.menuToggle::before,
+.menuToggle::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+}
+
+.menuToggle::before {
+    transform: translateY(-12px);
+    box-shadow: 0 12px #fff;
+}
+
+.menuToggle::after {
+    transform: translateY(12px);
+}
+
+header.active .menuToggle::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 #000;
+}
+
+header.active .menuToggle::after {
+    transform: rotate(315deg);
+    box-shadow: 0 0 #000;
+} 

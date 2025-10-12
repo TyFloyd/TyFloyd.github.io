@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Gallery</title>
+	<link rel="stylesheet" href="Style2.css">
+	
+    
+</head>
+ 
+<body>
+	 <header style = "
+            position: relative;
+            width: 100%;
+            min-height: 66px;
+            background:#007BFF ;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			z-index: 10;">
+        <a href="#" class="logo">NIBD</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index4.html">Home</a></li>
+                <li><a href="index4.html #about-us">About Us</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+                <li><a href="index4.html #contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+	<style>
+				body {
+				font-family: 'Arial', sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f4f4f4;
+				color: #333;
+				text-align: center !important;
+				}
+
+				header {
+				text-align: center !important;
+				background-color:#7DBBFF;
+				color: white !important;
+				padding: 20px !important;
+				text-align: center !important;
+				}
+
+				header h1 {
+				margin: 0 !important;
+				font-size: 2.5em !important;
+				}
+
+				header p {
+				font-size: 1.2em !important;
+				}
+				</style>
+				<header>
+    <h1>Project Gallery</h1>
+	<p> Feel free to browse around our collection of projects we have completed</p>
+	</header>
+	<br></br>
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+        <img class="slides" src="fishtank-before.jpg" alt="Slide 1">
+        <img class="slides" src="fishtank-after.jpg" alt="Slide 2">
+        <img class="slides" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3">
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="fishtank-before.jpg" alt="Image 1" onclick="openModal(this.src)">
+        <img src="fishtank-during.jpg" alt="Image 2" onclick="openModal(this.src)">
+        <img src="fishtank-after.jpg" alt="Image 3" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/300" alt="Image 4" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/300" alt="Image 5" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/300" alt="Image 6" onclick="openModal(this.src)">
+    </div>
+
+    <!-- Modal for Larger Images -->
+    <div class="modal" id="myModal" onclick="closeModal()">
+        <img id="modalImage" alt="Large Image">
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        function openModal(src) {
+            document.getElementById("modalImage").src = src; // Set the source of the modal image
+            document.getElementById("myModal").style.display = "flex"; // Show the modal
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none"; // Hide the modal
+        }
+    </script>
+</main>
+<div class="footer-content">
+			<p style = "color:#fff">&copy; 2025 Nailed it Building & Design. All rights reserved.</p>
+			</div>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('header');
+
+            if (menuToggle) {
+                menuToggle.onclick = function () {
+                    header.classList.toggle('active');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
